@@ -5,4 +5,5 @@ To use this app you have to create a profile and add the materials that you are 
 
 The application is in Turkish language but the English version will be released soon. Also there will be updates which will include following changes:
 - Barcode reading mechanism will be added.
-- Trusted People 
+- Trusted People: User can other add users that they know as "trusted person" and share his/her information.
+- Food and other products will be added. 
