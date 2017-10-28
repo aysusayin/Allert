@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aysusayin.com.allert.ListeActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.65"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        android:layout_below="@+id/toolbar3"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/linearLayout3" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <aysusayin.com.allert.LoginTextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@color/transparentWhite"
+            android:textColorHighlight="@android:color/white"
+            android:textSize="24sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <aysusayin.com.allert.MyButton
+            android:id="@+id/myProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.29"
+            android:backgroundTint="@color/colorPrimaryTransparent"
+            android:text="@string/profile"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <aysusayin.com.allert.MyButton
+            android:id="@+id/barcodeButton"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.29"
+            android:text="@string/barcode"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <aysusayin.com.allert.MyButton
+            android:id="@+id/logOutButonu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.29"
+            android:backgroundTint="@color/colorPrimaryTransparent"
+            android:text="@string/logOut"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar3"
+        android:fadingEdge="horizontal|vertical"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar3"
+            android:layout_marginTop="3dp"
+            android:hint="@string/search"
+            android:paddingLeft="36dp"
+            android:paddingRight="10dp"
+            android:popupBackground="@color/colorAccent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
